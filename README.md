@@ -139,10 +139,10 @@ Router::get('/user/{id}', 'UserController@show');
 
 ### Available methods
 
-| Method | Description |
-|--------|-------------|
-| `Router::get($uri, $handler)` | Register a GET route |
-| `Router::post($uri, $handler)` | Register a POST route |
+| Method                                    | Description                        |
+| ----------------------------------------- | ---------------------------------- |
+| `Router::get($uri, $handler)`             | Register a GET route               |
+| `Router::post($uri, $handler)`            | Register a POST route              |
 | `Router::match($methods, $uri, $handler)` | Register for multiple HTTP methods |
 
 Route handlers follow the format: `ControllerName@methodName`
@@ -191,11 +191,11 @@ class HomeController extends Controller
 
 ### Base Controller Methods
 
-| Method | Description |
-|--------|-------------|
-| `$this->view($path, $data)` | Render a view with data |
-| `$this->redirect($url)` | Redirect to a URL |
-| `$this->json($data, $status)` | Return JSON response |
+| Method                        | Description             |
+| ----------------------------- | ----------------------- |
+| `$this->view($path, $data)`   | Render a view with data |
+| `$this->redirect($url)`       | Redirect to a URL       |
+| `$this->json($data, $status)` | Return JSON response    |
 
 ## Views
 
@@ -240,14 +240,14 @@ $affected = Database::execute(
 
 ### Methods
 
-| Method | Returns | Description |
-|--------|---------|-------------|
-| `Database::connect()` | `PDO` | Get the singleton PDO instance |
-| `Database::query($sql, $params)` | `PDOStatement` | Execute a prepared query |
-| `Database::fetch($sql, $params)` | `?array` | Fetch one row or null |
-| `Database::fetchAll($sql, $params)` | `array` | Fetch all rows |
-| `Database::insert($sql, $params)` | `int` | Insert and return lastInsertId |
-| `Database::execute($sql, $params)` | `int` | Execute and return rowCount |
+| Method                              | Returns        | Description                    |
+| ----------------------------------- | -------------- | ------------------------------ |
+| `Database::connect()`               | `PDO`          | Get the singleton PDO instance |
+| `Database::query($sql, $params)`    | `PDOStatement` | Execute a prepared query       |
+| `Database::fetch($sql, $params)`    | `?array`       | Fetch one row or null          |
+| `Database::fetchAll($sql, $params)` | `array`        | Fetch all rows                 |
+| `Database::insert($sql, $params)`   | `int`          | Insert and return lastInsertId |
+| `Database::execute($sql, $params)`  | `int`          | Execute and return rowCount    |
 
 All queries use prepared statements with automatic parameter binding for security.
 
@@ -283,12 +283,12 @@ class User extends Model
 
 ### Model Methods
 
-| Method | Returns | Description |
-|--------|---------|-------------|
-| `Model::query($sql, $params)` | `PDOStatement` | Execute a prepared query |
-| `Model::fetchAll($sql, $params)` | `array` | Fetch all rows |
-| `Model::fetchOne($sql, $params)` | `?array` | Fetch one row or null |
-| `Model::execute($sql, $params)` | `int` | Execute and return lastInsertId |
+| Method                           | Returns        | Description                     |
+| -------------------------------- | -------------- | ------------------------------- |
+| `Model::query($sql, $params)`    | `PDOStatement` | Execute a prepared query        |
+| `Model::fetchAll($sql, $params)` | `array`        | Fetch all rows                  |
+| `Model::fetchOne($sql, $params)` | `?array`       | Fetch one row or null           |
+| `Model::execute($sql, $params)`  | `int`          | Execute and return lastInsertId |
 
 ## Migrations
 
@@ -379,9 +379,9 @@ server {
 ### Namespace Mapping
 
 | Namespace | Directory |
-|-----------|-----------|
-| `Lime\` | `System/` |
-| `App\` | `App/` |
+| --------- | --------- |
+| `Lime\`   | `System/` |
+| `App\`    | `App/`    |
 
 The autoloader in `Bootstrap.php` handles PSR-4-style class loading for both namespaces.
 
@@ -392,23 +392,6 @@ The autoloader in `Bootstrap.php` handles PSR-4-style class loading for both nam
 - Direct access to `App/`, `System/`, `vendor/`, and `storage/` is blocked
 - Root `.htaccess` restricts access to system directories
 - Voice file storage uses AES-256-CBC encryption (application-level)
-
-## Example Application
-
-A full chat application is included as a reference. See:
-
-- `App/Controller/ChatController.php` – Real-time messaging with voice support
-- `App/Controller/AuthController.php` – Login/logout with session management
-- `App/View/chat/index.php` – Chat UI with JavaScript polling
-- `App/Database/Migrations/` – Schema and seed data
-
-### Login Credentials (demo)
-
-| Email | Password |
-|-------|----------|
-| sarah@example.com | password |
-| mike@example.com | password |
-| emma@example.com | password |
 
 ## License
 
