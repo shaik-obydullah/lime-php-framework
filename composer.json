@@ -1,0 +1,11 @@
+{
+    "name": "lime-php/framework",
+    "description": "A lightweight PHP MVC framework",
+    "type": "project",
+    "require": {
+        "php": ">=8.1"
+    },
+    "suggest": {
+        "vlucas/valitron": "Required for input validation in your application"
+    }
+}
