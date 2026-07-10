@@ -391,7 +391,6 @@ The autoloader in `Bootstrap.php` handles PSR-4-style class loading for both nam
 - View output should be escaped with `htmlspecialchars()`
 - Direct access to `App/`, `System/`, `vendor/`, and `storage/` is blocked
 - Root `.htaccess` restricts access to system directories
-- Voice file storage uses AES-256-CBC encryption (application-level)
 
 ## License
 
