@@ -1,11 +1,32 @@
 {
-    "name": "lime-php/framework",
-    "description": "A lightweight PHP MVC framework",
-    "type": "project",
-    "require": {
-        "php": ">=8.1"
-    },
-    "suggest": {
-        "vlucas/valitron": "Required for input validation in your application"
+  "name": "shaik-obydullah/lime-php-framework",
+  "description": "A lightweight PHP MVC framework",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Shaik Obydullah",
+      "email": "sk.obydullah@gmail.com"
     }
+  ],
+  "keywords": [
+    "php",
+    "framework",
+    "mvc",
+    "lightweight",
+    "lime"
+  ],
+  "homepage": "https://github.com/shaik-obydullah/lime-php-framework",
+  "require": {
+    "php": ">=8.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Lime\\": "System/",
+      "App\\": "App/"
+    }
+  },
+  "suggest": {
+    "vlucas/valitron": "Required for input validation in your application"
+  }
 }
