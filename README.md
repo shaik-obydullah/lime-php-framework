@@ -1,6 +1,14 @@
 # Lime PHP Framework
 
+[![Latest Stable Version](https://poser.pugx.org/shaik-obydullah/lime-php-framework/v)](https://packagist.org/packages/shaik-obydullah/lime-php-framework)
+[![License](https://poser.pugx.org/shaik-obydullah/lime-php-framework/license)](https://packagist.org/packages/shaik-obydullah/lime-php-framework)
+[![PHP Version](https://poser.pugx.org/shaik-obydullah/lime-php-framework/require/php)](https://packagist.org/packages/shaik-obydullah/lime-php-framework)
+
 A lightweight, minimal PHP MVC framework with routing, database abstraction, migrations, and a simple templating engine. Designed for small to medium web applications.
+
+## Packagist
+
+Available on [Packagist](https://packagist.org/packages/shaik-obydullah/lime-php-framework).
 
 ## Features
 
@@ -23,11 +31,15 @@ A lightweight, minimal PHP MVC framework with routing, database abstraction, mig
 
 ## Installation
 
-### 1. Create a new project
+### Via Composer (Recommended)
 
 ```bash
-composer create-project lime-php/framework my-app
-# OR manually:
+composer create-project shaik-obydullah/lime-php-framework my-app
+```
+
+### Manual Installation
+
+```bash
 mkdir my-app && cd my-app
 ```
 
