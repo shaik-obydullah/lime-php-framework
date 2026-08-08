@@ -2,13 +2,23 @@
 
 [![Latest Stable Version](https://poser.pugx.org/shaik-obydullah/lime-php-framework/v)](https://packagist.org/packages/shaik-obydullah/lime-php-framework)
 [![License](https://poser.pugx.org/shaik-obydullah/lime-php-framework/license)](https://packagist.org/packages/shaik-obydullah/lime-php-framework)
-[![PHP Version](https://poser.pugx.org/shaik-obydullah/lime-php-framework/require/php)](https://packagist.org/packages/shaik-obydullah/lime-php-framework)
+
+[![PHP](https://img.shields.io/badge/PHP-%3E%3D%208.1-777BB4?style=flat-square&logo=php&logoColor=white)](https://www.php.net/)
+[![MySQL](https://img.shields.io/badge/MySQL-5.7%2B-4479A1?style=flat-square&logo=mysql&logoColor=white)](https://www.mysql.com/)
+[![Dependencies](https://img.shields.io/badge/dependencies-0-brightgreen?style=flat-square)](composer.json)
+[![Version](https://img.shields.io/badge/framework-v1.0.0-6366f1?style=flat-square)](System/Bootstrap.php)
+[![GitHub Stars](https://img.shields.io/github/stars/shaik-obydullah/lime-php-framework?style=flat-square)](https://github.com/shaik-obydullah/lime-php-framework)
+[![GitHub Forks](https://img.shields.io/github/forks/shaik-obydullah/lime-php-framework?style=flat-square)](https://github.com/shaik-obydullah/lime-php-framework)
 
 A lightweight, minimal PHP MVC framework with routing, database abstraction, migrations, and a simple templating engine. Designed for small to medium web applications.
 
 ## Packagist
 
 Available on [Packagist](https://packagist.org/packages/shaik-obydullah/lime-php-framework).
+
+## Documentation
+
+- [User Guide](User-Guide.md)
 
 ## Features
 
